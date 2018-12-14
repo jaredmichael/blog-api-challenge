@@ -31,6 +31,7 @@ describe("Blog Posts", function() {
                         "id",
                         "title",
                         "content",
+                        "publishDate",
                         "author"
                     );
                 });
@@ -43,7 +44,7 @@ describe("Blog Posts", function() {
             content: "test, test, test, test, test, test",
             author: "Tom Test"
         };
-        const expectedKeys = ["id"].concat(Object.keys(newPost));
+        const expectedKeys = ["id", "publishDate"].concat(Object.keys(newPost));
 
         return chai
             .request(app)

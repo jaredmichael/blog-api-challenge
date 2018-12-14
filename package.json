@@ -4,7 +4,8 @@
   "description": "learning CRUD",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "author": "Jared Juan",
   "license": "ISC",
@@ -12,5 +13,19 @@
     "express": "^4.16.4",
     "morgan": "^1.9.1",
     "uuid": "^3.3.2"
-  }
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredmichael/blog-api-challenge.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jaredmichael/blog-api-challenge/issues"
+  },
+  "homepage": "https://github.com/jaredmichael/blog-api-challenge#readme"
 }
